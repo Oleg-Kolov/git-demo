@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building..'
+                bat(batnik.bat)
             }
         }
         stage('Test') {
