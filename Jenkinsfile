@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat(batnik.bat)
+                bat 'batnik.bat'
             }
         }
         stage('Test') {
